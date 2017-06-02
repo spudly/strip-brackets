@@ -1,6 +1,5 @@
 {
   "name": "strip-brackets",
-  "private": true,
   "devDependencies": {
     "@spudly/eslint-config": "^5.1.0",
     "babel-cli": "^6.24.1",
