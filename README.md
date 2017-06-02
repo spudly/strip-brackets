@@ -1,5 +1,7 @@
 # strip-brackets
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/spudly/strip-brackets.svg)](https://greenkeeper.io/)
+
 Strips unecessary brackets
 
 ## Usage
