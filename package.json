@@ -10,16 +10,18 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-lodash-fp": "^2.1.3",
     "eslint-plugin-react": "^7.0.1",
+    "jest": "^20.0.4",
     "lint-staged": "^3.4.1",
-    "prettier": "^1.3.0",
+    "prettier": "^1.4.1",
     "semantic-release": "^6.3.6"
   },
   "scripts": {
-    "test": "echo 'no tests yet' && exit 0",
+    "test": "jest src",
     "precommit": "lint-staged",
     "lint": "eslint src",
-    "build": "babel src -d build",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "build": "babel src -d build --ignore=*.test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "prepublish": "npm run build"
   },
   "babel": {
     "presets": [

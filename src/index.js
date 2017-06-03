@@ -1,4 +1,4 @@
-const stripUnnecessaryBrackets = (open = '[', close = ']', join = [',']) =>
+const stripBrackets = (open = '[', close = ']', join = [',']) =>
   s => {
     const buffers = [{value: '', joined: false}];
     for (let i = 0; i < s.length; i++) {
@@ -25,4 +25,4 @@ const stripUnnecessaryBrackets = (open = '[', close = ']', join = [',']) =>
     return buffers.map(b => b.value).join('');
   };
 
-module.exports = stripUnnecessaryBrackets;
+module.exports = stripBrackets;
