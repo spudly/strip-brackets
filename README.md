@@ -8,7 +8,7 @@ Strips unecessary brackets
 
 Pass it some configuration parameters and it will give you a new function that strips all unnecessary brackets.
 
-### Function Signature
+#### Function Signature
 ```js
 stripBrackets(openChar = '[', closeChar = ']', joinChars = [',']) => input => output
 ```
@@ -23,7 +23,7 @@ const stripParens = stripBrackets('(', ')', [',']);
 stripParens('((a,b),(c),((d)))'); // => "(a,b),c,d"
 ```
 
-### Parameters
+#### Parameters
 
 <dl>
   <dt>openChar</dt>
