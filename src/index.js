@@ -17,7 +17,7 @@ const stripBrackets = (open = '[', close = ']', join = [',']) =>
         }
         default:
           buffers[buffers.length - 1].value += s[i];
-          if (join.includes(s[i])) {
+          if (join.indexOf(s[i]) !== -1) {
             buffers[buffers.length - 1].joined = true;
           }
       }
