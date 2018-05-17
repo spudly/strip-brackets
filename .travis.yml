@@ -5,6 +5,7 @@ node_js:
   - '6'
   - '5'
   - '4'
+  - '10'
 before_script: greenkeeper-lockfile-update
 after_script: greenkeeper-lockfile-upload
 before_install:
